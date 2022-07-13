@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import com.ista.springboot.web.app.apirest.models.entity.Cliente;
 import com.ista.springboot.web.app.services.IClienteService;
-
+//Karen
 @CrossOrigin(origins = {"http://localhost:8080"})
 @RestController
 @RequestMapping("/api")

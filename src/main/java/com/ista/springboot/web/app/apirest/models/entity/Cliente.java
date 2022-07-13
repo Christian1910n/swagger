@@ -24,6 +24,7 @@ public class Cliente implements Serializable {
 	//isaac
 	//miguel brazotes
 	//christian
+	//antony
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)

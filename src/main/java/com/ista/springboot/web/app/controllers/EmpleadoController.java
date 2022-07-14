@@ -17,7 +17,7 @@ public class EmpleadoController {
     private IEmpleadoService empleadoService;
 
 
-    @GetMapping("/listar")
+    @GetMapping("/listarempleado")
     public List<Empleado> indext(){
         return empleadoService.findAll();
     }
@@ -51,9 +51,9 @@ public class EmpleadoController {
         return empleadoService.save(empleadoactual);
     }
 
-    @DeleteMapping("/eliminar/{id}")
+    @DeleteMapping("/eliminarEmpleado/{id}")
     @ResponseStatus(HttpStatus.CREATED)
-    public void eliminar(@PathVariable long id){
+    public void eliminarEmpleado(@PathVariable long id){
         empleadoService.delete(id);
     }
 

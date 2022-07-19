@@ -13,54 +13,51 @@ import javax.persistence.Table;
 public class Producto implements Serializable{
 	
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long id_producto;
-	
+	private Long id;
 	
 	private String nombre;
 	private String descripcion;
 	private int costo;
 	private int stock;
-
-	public long getId_producto() {
-		return id_producto;
+	
+	public Long getId() {
+		return id;
 	}
-
-	public void setId_producto(long id_producto) {
-		this.id_producto = id_producto;
+	public void setId(Long id) {
+		this.id = id;
 	}
-
 	public String getNombre() {
 		return nombre;
 	}
-
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
 	public String getDescripcion() {
 		return descripcion;
 	}
-
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-
 	public int getCosto() {
 		return costo;
 	}
-
 	public void setCosto(int costo) {
 		this.costo = costo;
 	}
-
 	public int getStock() {
 		return stock;
 	}
-
 	public void setStock(int stock) {
 		this.stock = stock;
 	}
+	
+	
 
 }
